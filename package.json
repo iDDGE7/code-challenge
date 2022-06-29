@@ -1,0 +1,78 @@
+{
+    "name": "challenge",
+    "description": "code challenge",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+        "@craco/craco": "^6.4.3",
+        "@reduxjs/toolkit": "^1.8.2",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^12.1.10",
+        "@tinymce/tinymce-react": "^4.1.0",
+        "axios": "^0.27.2",
+        "node-sass": "6.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.5",
+        "react-scripts": "4.0.3",
+        "redux": "^4.1.1",
+        "redux-devtools-extension": "^2.13.9",
+        "redux-mock-store": "^1.5.4",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "^5.3.3",
+        "styled-tools": "^1.7.2",
+        "web-vitals": "^1.0.1",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^4.9.2"
+    },
+    "jest": {
+        "moduleNameMapper": {
+            "^@components(.*)$": "<rootDir>/src/components$1",
+            "^@layouts(.*)$": "<rootDir>/src/layouts$1",
+            "^@pages(.*)$": "<rootDir>/src/pages$1",
+            "^@hooks(.*)$": "<rootDir>/src/hooks$1",
+            "^@state(.*)$": "<rootDir>/src/state$1",
+            "^@assets(.*)$": "<rootDir>/src/assets$1",
+            "^@constants(.*)$": "<rootDir>/src/constants$1",
+            "^@services(.*)$": "<rootDir>/src/services$1",
+            "^@reducers(.*)$": "<rootDir>/src/reducers$1"
+        }
+    },
+    "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "craco eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "prettier": {
+        "semi": true,
+        "singleQuote": false,
+        "tabWidth": 4,
+        "useTabs": false,
+        "printWidth": 120,
+        "trailingComma": "es5"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "craco-alias": "^3.0.1",
+        "netlify-cli": "^10.4.0"
+    }
+}

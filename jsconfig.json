@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@components": ["./src/components/index.js"],
+            "@layouts": ["src/layouts/index.js"],
+            "@pages": ["./src/pages/index.js"],
+            "@hooks": ["./src/hooks/index.js"],
+            "@state": ["./src/state/index.js"],
+            "@assets/*": ["./src/assets/*"],
+            "@constants/*": ["./src/constants/*"],
+            "@services": ["./src/services/*"],
+            "@reducers/*": ["./src/reducers/*"]
+        }
+    },
+    "exclude": [
+        ".git",
+        ".app-cache",
+        ".npm",
+        ".npm-tmp",
+        "dist",
+        "dist*",
+        "node_modules",
+        "subfolder/dist",
+        "subfolder/node_modules",
+        "**/dist/*",
+        "**/TypeScript/*"
+    ]
+}
